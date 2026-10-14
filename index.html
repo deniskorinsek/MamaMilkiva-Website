@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MamaMilkiva · Vedno veš, koliko je minilo</title>
+<meta name="description" content="Odprtokodna aplikacija za Android za beleženje hranjenja in črpanja. Pokaže, koliko časa je minilo, in te ob izbranem času nežno opomni. Vsi podatki ostanejo na telefonu.">
+<meta name="theme-color" content="#FBE9E0">
+<link rel="canonical" href="https://deniskorinsek.github.io/MamaMilkiva-Website/">
+<link rel="alternate" hreflang="sl" href="https://deniskorinsek.github.io/MamaMilkiva-Website/">
+<link rel="alternate" hreflang="en" href="https://deniskorinsek.github.io/MamaMilkiva-Website/en/">
+<link rel="alternate" hreflang="x-default" href="https://deniskorinsek.github.io/MamaMilkiva-Website/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MamaMilkiva">
+<meta property="og:locale" content="sl_SI">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:title" content="MamaMilkiva · Vedno veš, koliko je minilo">
+<meta property="og:description" content="Mirno beleženje hranjenja in črpanja. Opomnik ob izbranem času, podatki samo na tvojem telefonu.">
+<meta property="og:url" content="https://deniskorinsek.github.io/MamaMilkiva-Website/">
+<meta property="og:image" content="https://deniskorinsek.github.io/MamaMilkiva-Website/assets/img/og-sl.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Zaslon aplikacije MamaMilkiva in napis Vedno veš, koliko je minilo.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/figtree-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/figtree-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__mmReady){document.documentElement.classList.remove('js');}},3000);</script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#vsebina">Skoči na vsebino</a>
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html" aria-label="MamaMilkiva, začetna stran">
+      <img class="brand__mark" src="assets/img/icons/app-icon.svg" alt="" width="40" height="40">
+      <span class="brand__name">MamaMilkiva</span>
+    </a>
+    <nav class="site-nav" aria-label="Glavna navigacija" data-spy="true">
+      <ul>
+        <li><a href="#funkcije">Funkcije</a></li>
+        <li><a href="#kako">Kako deluje</a></li>
+        <li><a href="#zasebnost">Zasebnost</a></li>
+        <li><a href="#vprasanja">Vprašanja</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary btn--sm header-cta" href="#prenos">Prenesi</a>
+    <a class="icon-btn" href="https://github.com/deniskorinsek/MamaMilkiva" aria-label="Izvorna koda na GitHubu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 7.5L4 12l4.5 4.5"/><path d="M15.5 7.5L20 12l-4.5 4.5"/><path d="M13.5 5l-3 14"/></svg>
+    </a>
+    <nav class="lang-switch" aria-label="Jezik">
+      <a href="index.html" lang="sl" hreflang="sl" aria-current="page"><span>SL</span></a>
+      <a href="en/index.html" lang="en" hreflang="en" aria-label="English"><span>EN</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="vsebina" tabindex="-1">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="hero-title" data-parallax data-pointer>
+    <div class="hero__glow" aria-hidden="true" data-speed="0.25" data-depth="0.3"></div>
+    <div class="hero__blob" aria-hidden="true" data-speed="0.12" data-depth="0.2"></div>
+    <div class="hero__layer" aria-hidden="true" data-speed="0.18" data-depth="0.15">
+      <svg class="hero__arc" viewBox="0 0 1440 700" preserveAspectRatio="none" focusable="false"><path d="M-40 690C220 250 760 70 1480 150" fill="none" stroke="#E2AE9C" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.1 12" vector-effect="non-scaling-stroke"/></svg>
+      <span class="hero__sun"></span>
+    </div>
+
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <p class="badge" data-reveal>
+            <span class="badge__dot" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24"><path d="M12 20.4c-.3 0-.6-.1-.8-.3C7.6 17.2 3.6 13.8 3.6 9.6 3.6 7 5.6 5 8.1 5c1.6 0 3 .8 3.9 2.1C12.9 5.8 14.3 5 15.9 5c2.5 0 4.5 2 4.5 4.6 0 4.2-4 7.6-7.6 10.5-.2.2-.5.3-.8.3z" fill="#FFFFFF"/></svg></span>
+            Aplikacija za Android · odprta koda
+          </p>
+          <h1 id="hero-title" data-reveal style="--delay:.08s">Vedno veš, koliko je <span class="swash">minilo.<svg aria-hidden="true" viewBox="0 0 200 20" preserveAspectRatio="none" focusable="false"><path d="M4 14C50 4 120 2 196 10" fill="none" stroke="#F4B48C" stroke-width="6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></span></h1>
+          <p class="lead" data-reveal style="--delay:.16s">MamaMilkiva zabeleži hranjenje in začetek črpanja ter jasno pokaže, koliko časa je minilo od zadnjega. Ko poteče izbrani čas, te nežno opomni.</p>
+          <div class="hero__actions" data-reveal style="--delay:.24s">
+            <a class="store-btn" href="https://play.google.com/store/apps/details?id=si.mamamilkiva.app&amp;hl=sl">
+              <span class="store-btn__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M12 7v7"/><path d="M9 11.5l3 3 3-3"/></svg></span>
+              <span class="store-btn__text"><span class="store-btn__small">Prenesi z</span><span class="store-btn__big">Google Play</span></span>
+            </a>
+            <a class="btn btn--secondary btn--lg" href="#kako">
+              Kako deluje
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M6 13l6 6 6-6"/></svg>
+            </a>
+          </div>
+          <p class="hero__note" data-reveal style="--delay:.3s">Za Android 10 ali novejši. Datoteka APK je na voljo tudi na <a href="https://github.com/deniskorinsek/MamaMilkiva/releases/latest">GitHubu</a>.</p>
+        </div>
+
+        <div class="hero__visual">
+          <svg class="hero__sparkles" viewBox="0 0 600 640" aria-hidden="true" focusable="false" data-speed="-0.15" data-depth="1.8"><path d="M556 54l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#B05566" opacity=".55"/><path d="M40 160l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#F4B48C"/><path d="M590 420l2.5 7 7 2.5-7 2.5-2.5 7-2.5-7-7-2.5 7-2.5z" fill="#4A7D70" opacity=".6"/></svg>
+
+          <div class="hero__phone hero__phone--back" data-speed="0.08" data-depth="0.6">
+            <div data-reveal="rise" style="--delay:.38s">
+              <div class="phone"><div class="phone__frame">
+                <img src="assets/img/screens/history-786.webp" srcset="assets/img/screens/history-420.webp 420w, assets/img/screens/history-786.webp 786w" sizes="(min-width: 960px) 230px, 39vw" width="393" height="852" alt="Zaslon Zgodovina z vnosi, razvrščenimi po dnevih" decoding="async">
+              </div></div>
+            </div>
+          </div>
+
+          <div class="hero__phone hero__phone--front" data-speed="0.02" data-depth="0.9">
+            <div data-reveal="rise" style="--delay:.22s">
+              <div class="phone"><div class="phone__frame">
+                <img src="assets/img/screens/home-786.webp" srcset="assets/img/screens/home-420.webp 420w, assets/img/screens/home-786.webp 786w" sizes="(min-width: 960px) 280px, 46vw" width="393" height="852" alt="Zaslon Pregled: zadnje hranjenje pred 25 minutami, zadnje črpanje pred 1 uro in 40 minutami" fetchpriority="high">
+              </div></div>
+            </div>
+          </div>
+
+          <div class="float-card float-card--feeding" aria-hidden="true" data-speed="-0.08" data-depth="1.4">
+            <div data-reveal="scale" style="--delay:.85s">
+              <div class="float-card__inner">
+                <span class="float-card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.4 5.6c0-1.9.7-3.1 1.6-3.1s1.6 1.2 1.6 3.1"/><rect x="8.4" y="5.6" width="7.2" height="2.6" rx="1"/><path d="M9.2 8.2 8 10.6v8.9a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-8.9l-1.2-2.4"/></svg></span>
+                <span class="float-card__text"><span class="float-card__label">Hranjenje</span><span class="float-card__value">pred 25 min</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-card float-card--reminder" aria-hidden="true" data-speed="-0.12" data-depth="1.2">
+            <div data-reveal="scale" style="--delay:1s">
+              <div class="float-card__inner">
+                <span class="float-card__icon float-card__icon--bell"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5A5.5 5.5 0 0 0 6.5 9v3.6c0 .8-.3 1.6-.8 2.2l-1.2 1.7h15l-1.2-1.7a3.8 3.8 0 0 1-.8-2.2V9A5.5 5.5 0 0 0 12 3.5z"/><path d="M9.8 19.6a2.3 2.3 0 0 0 4.4 0"/></svg></span>
+                <span class="float-card__text"><span class="float-card__title">Opomnik ob 10:45</span><span class="float-card__sub">čez 1&nbsp;h&nbsp;20&nbsp;min</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="trust" aria-label="Na kratko">
+        <li data-reveal style="--delay:.45s"><span class="tone-icon tone-rose" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></span>Podatki ostanejo na telefonu</li>
+        <li data-reveal style="--delay:.53s"><span class="tone-icon tone-sage" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.4-3 8-7 9.5-4-1.5-7-5.1-7-9.5V6z"/><path d="M9 12l2 2 4-4"/></svg></span>Brez računa in oglasov</li>
+        <li data-reveal style="--delay:.61s"><span class="tone-icon tone-peach" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18"/><path d="M7.6 7.7A5 5 0 0 0 6.5 17.5H17"/><path d="M20.4 16.3A3.8 3.8 0 0 0 17.5 10h-.6a5.6 5.6 0 0 0-6.4-4"/></svg></span>Deluje brez interneta</li>
+        <li data-reveal style="--delay:.69s"><span class="tone-icon tone-lilac" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 7.5L4 12l4.5 4.5"/><path d="M15.5 7.5L20 12l-4.5 4.5"/><path d="M13.5 5l-3 14"/></svg></span>Odprta koda</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Features ============ -->
+  <section id="funkcije" class="section" aria-labelledby="f-title">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">Funkcije</p>
+        <h2 id="f-title" class="h2">Narejeno za dolge noči</h2>
+        <p class="lead">Vse pomembno je na prvem zaslonu: brez iskanja po menijih, z eno roko, tudi ob treh zjutraj.</p>
+      </div>
+
+      <div class="bento">
+        <!-- Time since -->
+        <div class="span-md-2" data-reveal>
+          <article class="card card--rose card--split">
+            <div class="card__body">
+              <span class="card__icon" style="color:#8E3F4E" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>
+              <h3 class="h3">Koliko je minilo, takoj</h3>
+              <p class="card__text">Velike številke pokažejo čas od zadnjega hranjenja in črpanja, natančna ura je tik pod njimi. Brez računanja ob treh zjutraj.</p>
+            </div>
+            <div class="card__peek">
+              <div class="phone phone--peek"><div class="phone__frame">
+                <img src="assets/img/screens/home-420.webp" srcset="assets/img/screens/home-420.webp 420w, assets/img/screens/home-786.webp 786w" sizes="230px" width="393" height="852" alt="Kartici Zadnje hranjenje in Zadnje črpanje na zaslonu Pregled" loading="lazy" decoding="async">
+              </div></div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Reminders -->
+        <div class="span-lg-1" data-reveal style="--delay:.1s">
+          <article class="card card--sage">
+            <div class="reminder-demo" aria-hidden="true">
+              <svg class="ring" viewBox="0 0 104 104" focusable="false"><circle cx="52" cy="52" r="50" fill="#FFFFFF" opacity=".55"/><circle cx="52" cy="52" r="40" fill="#F3F8F6"/><circle cx="52" cy="52" r="40" fill="none" stroke="#C5DDD3" stroke-width="7"/><circle class="ring__progress" cx="52" cy="52" r="40" fill="none" stroke="#4A7D70" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="44" transform="rotate(-90 52 52)"/><path d="M52 31c-6 8.5-12 16.5-12 23.5a12 12 0 0 0 24 0c0-7-6-15-12-23.5z" fill="#CFE3DA"/><path d="M46 56.5a6 6 0 0 0 4.3 5.8" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/></svg>
+              <ul class="mini-settings">
+                <li><span class="mini-switch"></span>Hranjenje<b>3 h</b></li>
+                <li><span class="mini-switch"></span>Črpanje<b>2 h 30 min</b></li>
+              </ul>
+            </div>
+            <h3 class="h3">Opomnika po tvoji meri</h3>
+            <p class="card__text">Ločena opomnika za hranjenje in črpanje, vsak s svojim časom od 30 minut do 12 ur. Eno nežno obvestilo, brez ponavljanja.</p>
+          </article>
+        </div>
+
+        <!-- History -->
+        <div class="span-lg-1" data-reveal>
+          <article class="card card--peach">
+            <img class="clothesline" src="assets/img/illustrations/animated/history-clothesline.svg" data-still="assets/img/illustrations/static/history-clothesline.svg" alt="" width="171" height="118" loading="lazy">
+            <div class="history-demo" aria-hidden="true">
+              <div class="history-demo__head"><span class="history-demo__day">Danes</span><span class="history-demo__sum">3× hranjenje · 2× črpanje</span></div>
+              <div class="timeline">
+                <div class="timeline__track"></div>
+                <span class="timeline__dot timeline__dot--pump" style="left:10.4%;--i:0"></span>
+                <span class="timeline__dot" style="left:13.9%;--i:1"></span>
+                <span class="timeline__dot" style="left:25.7%;--i:2"></span>
+                <span class="timeline__dot timeline__dot--pump" style="left:32.3%;--i:3"></span>
+                <span class="timeline__dot" style="left:37.5%;--i:4"></span>
+                <span class="timeline__now" style="left:39.6%"></span>
+              </div>
+              <div class="timeline__labels"><span>00</span><span>06</span><span>12</span><span>18</span><span>24</span></div>
+            </div>
+            <h3 class="h3">Zgodovina po dnevih</h3>
+            <p class="card__text">Vsi vnosi na enem mestu, najnovejši na vrhu, z dnevnim povzetkom. Vsak čas lahko popraviš ali vnos izbrišeš.</p>
+          </article>
+        </div>
+
+        <!-- Night -->
+        <div class="span-md-2" data-reveal style="--delay:.1s">
+          <article class="card card--night card--split">
+            <svg class="stars" viewBox="0 0 600 400" preserveAspectRatio="xMaxYMin slice" aria-hidden="true" focusable="false"><circle cx="540" cy="70" r="1.8" fill="#FFFFFF"/><circle cx="470" cy="40" r="1.3" fill="#FFFFFF"/><circle cx="300" cy="60" r="1.5" fill="#FFFFFF"/><circle cx="380" cy="120" r="1.1" fill="#FFFFFF"/><circle cx="250" cy="150" r="1.3" fill="#FFFFFF"/><circle cx="560" cy="200" r="1.2" fill="#FFFFFF"/><circle cx="200" cy="40" r="1" fill="#FFFFFF"/><circle cx="430" cy="210" r="1.4" fill="#FFFFFF"/><circle cx="120" cy="90" r="1.1" fill="#FFFFFF"/><circle cx="350" cy="30" r="1" fill="#FFFFFF"/><path d="M420 90l2 5.5 5.5 2-5.5 2-2 5.5-2-5.5-5.5-2 5.5-2z" fill="#FBE3C4"/><path d="M515 150l1.6 4.4 4.4 1.6-4.4 1.6-1.6 4.4-1.6-4.4-4.4-1.6 4.4-1.6z" fill="#FBE3C4"/></svg>
+            <div class="card__body">
+              <svg class="card__moon" viewBox="0 0 72 72" aria-hidden="true" focusable="false"><defs><mask id="moon-cut"><rect width="72" height="72" fill="#FFFFFF"/><circle cx="45" cy="27" r="15" fill="#000000"/></mask></defs><circle cx="36" cy="36" r="34" fill="#FBE3C4" opacity=".14"/><circle cx="36" cy="36" r="19" fill="#FBE3C4" mask="url(#moon-cut)"/></svg>
+              <h3 class="h3">Prijazno ponoči</h3>
+              <p class="card__text">Med 20. in 6. uro se glava zaslona umiri v nočne barve. Velike tipke za eno roko in podpora za povečano pisavo do 200&nbsp;%.</p>
+            </div>
+            <div class="card__peek">
+              <div class="phone phone--peek phone--dark"><div class="phone__frame">
+                <img src="assets/img/screens/home-night-420.webp" srcset="assets/img/screens/home-night-420.webp 420w, assets/img/screens/home-night-786.webp 786w" sizes="230px" width="393" height="852" alt="Zaslon Pregled ponoči z luno in zvezdami v glavi" loading="lazy" decoding="async">
+              </div></div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Feeding methods -->
+        <div class="span-lg-1" data-reveal>
+          <article class="card card--lilac">
+            <ul class="methods" aria-label="Načini hranjenja">
+              <li style="--i:0"><span class="methods__icon tone-rose" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Dojenje<span class="methods__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></li>
+              <li style="--i:1"><span class="methods__icon tone-sage" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5c-3.3 4.6-6.5 8.4-6.5 11.6a6.5 6.5 0 0 0 13 0c0-3.2-3.2-7-6.5-11.6z"/></svg></span>Črpanje mleka<span class="methods__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></li>
+              <li style="--i:2"><span class="methods__icon tone-peach" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.4 5.6c0-1.9.7-3.1 1.6-3.1s1.6 1.2 1.6 3.1"/><rect x="8.4" y="5.6" width="7.2" height="2.6" rx="1"/><path d="M9.2 8.2 8 10.6v8.9a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-8.9l-1.2-2.4"/></svg></span>Adaptirano mleko<span class="methods__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></li>
+            </ul>
+            <h3 class="h3">Tvoj način hranjenja</h3>
+            <p class="card__text">Izbereš, kako hraniš dojenčka. Črpanje in njegov opomnik se pokažeta le, če črpaš.</p>
+          </article>
+        </div>
+
+        <!-- Encouragement -->
+        <div class="span-lg-2" data-reveal style="--delay:.1s">
+          <article class="card card--cream card--quote">
+            <img class="quote-art" src="assets/img/illustrations/animated/history-empty-basket-baby.svg" data-still="assets/img/illustrations/static/history-empty-basket-baby.svg" alt="" width="220" height="170" loading="lazy">
+            <figure class="quote" data-quotes='["Včasih je ves svet velik natanko toliko kot naročje.","Ne štejeta minut. Nabirata vajin svet.","Ljubezen ne pozna zamujenih ur.","Tvoje roke se učijo. Tudi to je ljubezen.","Z vsakim hranjenjem pišeta svojo čisto posebno zgodbo.","Ta trenutek ne rabi biti popoln, da je vajin."]'>
+              <h3 class="eyebrow">Drobna spodbuda</h3>
+              <blockquote><p class="quote__text">Včasih je ves svet velik natanko toliko kot naročje.</p></blockquote>
+              <figcaption class="quote__foot">
+                <span class="quote__dots" aria-hidden="true"><span class="is-active"></span><span></span><span></span><span></span><span></span><span></span></span>
+                <span class="quote__caption">Ena izmed 150 nežnih misli v aplikaciji</span>
+                <button class="pause-btn" type="button" aria-pressed="false" aria-label="Ustavi menjavanje misli">
+                  <svg class="icon-pause" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="5.5" width="3.6" height="13" rx="1.2" fill="currentColor"/><rect x="13.4" y="5.5" width="3.6" height="13" rx="1.2" fill="currentColor"/></svg>
+                  <svg class="icon-play" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 5.8v12.4a.8.8 0 0 0 1.2.7l9.6-6.2a.8.8 0 0 0 0-1.4L9.7 5.1a.8.8 0 0 0-1.2.7z" fill="currentColor"/></svg>
+                </button>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ How it works ============ -->
+  <section id="kako" class="section section--white" aria-labelledby="h-title">
+    <div class="container">
+      <div class="how__head" data-reveal>
+        <div class="section-head">
+          <p class="eyebrow eyebrow--sage">Kako deluje</p>
+          <h2 id="h-title" class="h2">Trije preprosti koraki</h2>
+        </div>
+        <p class="lead">Beleženje traja nekaj sekund. Opomnik poskrbi za ostalo.</p>
+      </div>
+
+      <div class="how__body">
+        <ol class="steps" role="list">
+          <li class="step is-active" data-reveal>
+            <div class="step__media step__media--rose">
+              <span class="step__media-num" aria-hidden="true">1</span>
+              <div class="phone"><div class="phone__frame">
+                <img src="assets/img/screens/log-feeding-420.webp" srcset="assets/img/screens/log-feeding-420.webp 420w, assets/img/screens/log-feeding-786.webp 786w" sizes="210px" width="393" height="852" alt="Zaslon Zabeleži hranjenje z izbiro datuma in ure" loading="lazy" decoding="async">
+              </div></div>
+            </div>
+            <div class="step__text">
+              <span class="step__num" aria-hidden="true">1</span>
+              <h3>Zabeleži hranjenje</h3>
+              <p>Pusti predizbrani čas ali izberi drugega in shrani. Datum in ura sta vidna, preden shraniš.</p>
+            </div>
+          </li>
+          <li class="step" data-reveal style="--delay:.1s">
+            <div class="step__media step__media--sage">
+              <span class="step__media-num" aria-hidden="true">2</span>
+              <div class="phone"><div class="phone__frame">
+                <img src="assets/img/screens/pumping-saved-420.webp" srcset="assets/img/screens/pumping-saved-420.webp 420w, assets/img/screens/pumping-saved-786.webp 786w" sizes="210px" width="393" height="852" alt="Pregled po beleženju črpanja s sporočilom Črpanje zabeleženo in gumbom Razveljavi" loading="lazy" decoding="async">
+              </div></div>
+            </div>
+            <div class="step__text">
+              <span class="step__num" aria-hidden="true">2</span>
+              <h3>Začni črpanje z enim dotikom</h3>
+              <p>Ko začneš črpati, pritisni gumb. Če si se zmotila, vnos takoj razveljaviš.</p>
+            </div>
+          </li>
+          <li class="step" data-reveal style="--delay:.2s">
+            <div class="step__media step__media--peach">
+              <span class="step__media-num" aria-hidden="true">3</span>
+              <div class="phone"><div class="phone__frame">
+                <img src="assets/img/screens/reminder-due-420.webp" srcset="assets/img/screens/reminder-due-420.webp 420w, assets/img/screens/reminder-due-786.webp 786w" sizes="210px" width="393" height="852" alt="Pregled z opomnikom, ko poteče izbrani čas po zadnjem črpanju" loading="lazy" decoding="async">
+              </div></div>
+            </div>
+            <div class="step__text">
+              <span class="step__num" aria-hidden="true">3</span>
+              <h3>Opomnik ob pravem času</h3>
+              <p>Ko poteče izbrani čas, privzeto 3 ure, te MamaMilkiva nežno opomni. Na zaklenjenem zaslonu brez podrobnosti.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="stage" aria-hidden="true" data-active="0">
+          <div class="stage__backdrop">
+            <div class="stage__ring"></div>
+            <div class="stage__ring stage__ring--2"></div>
+          </div>
+          <div class="stage__phone phone"><div class="phone__frame stage__screens">
+            <img class="is-active" src="assets/img/screens/log-feeding-786.webp" width="393" height="852" alt="" loading="lazy" decoding="async">
+            <img src="assets/img/screens/pumping-saved-786.webp" width="393" height="852" alt="" loading="lazy" decoding="async">
+            <img src="assets/img/screens/reminder-due-786.webp" width="393" height="852" alt="" loading="lazy" decoding="async">
+          </div></div>
+          <div class="stage__dots"><span class="is-active"></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Privacy ============ -->
+  <section id="zasebnost" class="privacy-band on-dark" aria-labelledby="p-title" data-parallax>
+    <svg class="privacy-band__arc" viewBox="0 0 1440 700" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M-40 620C300 180 900 60 1480 260" fill="none" stroke="#FFFFFF" stroke-opacity=".18" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.1 12" vector-effect="non-scaling-stroke"/></svg>
+    <div class="container privacy-band__grid">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow eyebrow--light">Zasebnost</p>
+        <h2 id="p-title" class="h2">Tvoji podatki ostanejo pri tebi.</h2>
+        <p class="lead">MamaMilkiva nima strežnika in ne zahteva računa. Vse, kar zabeležiš, je shranjeno samo na tvojem telefonu.</p>
+        <ul class="checklist">
+          <li style="--i:0"><span class="checklist__tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Brez računa, prijave in sinhronizacije</li>
+          <li style="--i:1"><span class="checklist__tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Brez oglasov, analitike in sledilnikov</li>
+          <li style="--i:2"><span class="checklist__tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Aplikacija nima dovoljenja za internet</li>
+          <li style="--i:3"><span class="checklist__tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Na zaklenjenem zaslonu opomnik ne kaže podrobnosti</li>
+        </ul>
+        <p style="padding-top:16px"><a class="btn btn--white btn--white-sage" href="zasebnost/index.html">Preberi politiko zasebnosti<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a></p>
+      </div>
+
+      <div class="privacy-band__visual">
+        <div class="privacy-band__halo" aria-hidden="true" data-speed="0.12"></div>
+        <div class="privacy-band__disc" aria-hidden="true" data-speed="0.05"></div>
+        <div class="privacy-band__phone" data-speed="-0.03">
+          <div class="phone phone--sage-shadow" data-reveal="rise"><div class="phone__frame">
+            <img src="assets/img/screens/settings-420.webp" srcset="assets/img/screens/settings-420.webp 420w, assets/img/screens/settings-786.webp 786w" sizes="240px" width="393" height="852" alt="Zaslon Nastavitve: opomnik, obvestila in podatki, shranjeni samo na tem telefonu" loading="lazy" decoding="async">
+          </div></div>
+        </div>
+        <div class="privacy-band__lock" aria-hidden="true" data-speed="-0.12"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/><path d="M12 14.5v2"/></svg></div>
+        <div class="privacy-band__pill" aria-hidden="true" data-speed="-0.08"><span class="tone-icon tone-sage" style="width:28px;height:28px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></span>Samo na tem telefonu</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Open source ============ -->
+  <section id="odprta-koda" class="section" aria-labelledby="o-title">
+    <div class="container">
+      <div class="oss" data-reveal>
+        <div class="oss__deco" aria-hidden="true"></div>
+        <div class="oss__body">
+          <span class="oss__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 7.5L4 12l4.5 4.5"/><path d="M15.5 7.5L20 12l-4.5 4.5"/><path d="M13.5 5l-3 14"/></svg></span>
+          <h2 id="o-title" class="h2 h2--sm">Odprta koda, narejena s skrbjo</h2>
+          <p class="lead">Izvorna koda je javno dostopna na GitHubu. Aplikacija je napisana v Kotlinu z Jetpack Compose in deluje povsem brez povezave.</p>
+          <ul class="chips" aria-label="Tehnologije">
+            <li class="chip-rose" style="--i:0">Kotlin</li>
+            <li class="chip-sage" style="--i:1">Jetpack Compose</li>
+            <li class="chip-peach" style="--i:2">Material 3</li>
+            <li class="chip-lilac" style="--i:3">Room</li>
+            <li class="chip-neutral" style="--i:4">DataStore</li>
+            <li class="chip-sage" style="--i:5">Android 10+</li>
+          </ul>
+        </div>
+        <div class="oss__actions">
+          <a class="btn btn--dark" href="https://github.com/deniskorinsek/MamaMilkiva"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 7.5L4 12l4.5 4.5"/><path d="M15.5 7.5L20 12l-4.5 4.5"/><path d="M13.5 5l-3 14"/></svg>Odpri repozitorij</a>
+          <a class="btn btn--secondary" href="https://github.com/deniskorinsek/MamaMilkiva/issues/new">Prijavi napako</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="vprasanja" class="section section--flush-top" aria-labelledby="q-title">
+    <div class="container faq">
+      <div class="faq__intro" data-reveal>
+        <p class="eyebrow">Vprašanja</p>
+        <h2 id="q-title" class="h2">Pogosta vprašanja</h2>
+        <p class="lead">Ne najdeš odgovora? <a class="text-link" href="https://github.com/deniskorinsek/MamaMilkiva/issues/new">Odpri vprašanje na GitHubu</a>.</p>
+      </div>
+      <div class="faq__list" data-reveal style="--delay:.1s">
+        <details name="faq" open>
+          <summary>Kako namestim aplikacijo?<span class="faq__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <div class="faq__answer"><p>Najlažje iz trgovine Google Play: poišči MamaMilkiva ali na telefonu odpri gumb na tej strani. Če Googlove trgovine ne uporabljaš, lahko datoteko APK preneseš z GitHuba. Android te bo morda vprašal, ali dovoliš nameščanje iz tega vira.</p></div>
+        </details>
+        <details name="faq">
+          <summary>Ali aplikacija kamorkoli pošilja moje podatke?<span class="faq__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <div class="faq__answer"><p>Ne. Aplikacija sploh nima dovoljenja za dostop do interneta. Vsi vnosi so shranjeni samo na tvojem telefonu, brez računa, oglasov ali analitike.</p></div>
+        </details>
+        <details name="faq">
+          <summary>Lahko nastavim, kdaj me opomni?<span class="faq__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <div class="faq__answer"><p>Da. Opomnik za hranjenje in opomnik za črpanje vklopiš posebej in vsakemu izbereš čas od 30 minut do 12 ur. Privzeto sta nastavljena na 3 ure.</p></div>
+        </details>
+        <details name="faq">
+          <summary>Kaj se zgodi, če ne dovolim obvestil?<span class="faq__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <div class="faq__answer"><p>Beleženje in zgodovina delujeta normalno, le opomnikov ne dobiš. Obvestila lahko kadarkoli vklopiš v Nastavitvah.</p></div>
+        </details>
+        <details name="faq">
+          <summary>Zakaj lahko opomnik pride z zamikom?<span class="faq__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <div class="faq__answer"><p>Če Android ne dovoli natančnih alarmov ali telefon varčuje z baterijo, lahko opomnik pride nekoliko kasneje, nikoli pa pred iztekom izbranega časa.</p></div>
+        </details>
+        <details name="faq">
+          <summary>Kaj se zgodi z vnosi, če zamenjam telefon?<span class="faq__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <div class="faq__answer"><p>Vnosi ostanejo samo na tem telefonu. Varnostna kopija v oblak in prenos na nov telefon sta izklopljena. Ko aplikacijo odstraniš, se vnosi izbrišejo.</p></div>
+        </details>
+        <details name="faq">
+          <summary>Ali je MamaMilkiva zdravstveni pripomoček?<span class="faq__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+          <div class="faq__answer"><p>Ne. Opomnik je organizacijski pripomoček, ne zdravstveno priporočilo.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Download ============ -->
+  <section id="prenos" class="section section--flush-top" aria-labelledby="d-title">
+    <div class="container">
+      <div class="cta on-dark" data-reveal data-parallax>
+        <div class="cta__blob cta__blob--1" aria-hidden="true" data-speed="0.1"></div>
+        <div class="cta__blob cta__blob--2" aria-hidden="true" data-speed="-0.08"></div>
+        <div class="cta__hearts" aria-hidden="true">
+          <span style="--x:8%;--s:12px;--t:11s;--d:-1s"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-7.5-10.4A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7.5 2.6C19.5 16.4 12 21 12 21z" fill="#FFFFFF"/></svg></span>
+          <span style="--x:22%;--s:18px;--t:13s;--d:-6s"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-7.5-10.4A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7.5 2.6C19.5 16.4 12 21 12 21z" fill="#F4B48C"/></svg></span>
+          <span style="--x:41%;--s:10px;--t:10s;--d:-3s"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-7.5-10.4A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7.5 2.6C19.5 16.4 12 21 12 21z" fill="#FFFFFF"/></svg></span>
+          <span style="--x:58%;--s:16px;--t:12s;--d:-8s"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-7.5-10.4A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7.5 2.6C19.5 16.4 12 21 12 21z" fill="#FFFFFF"/></svg></span>
+          <span style="--x:74%;--s:12px;--t:9s;--d:-4.5s"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-7.5-10.4A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7.5 2.6C19.5 16.4 12 21 12 21z" fill="#F4B48C"/></svg></span>
+          <span style="--x:88%;--s:20px;--t:14s;--d:-10s"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-7.5-10.4A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7.5 2.6C19.5 16.4 12 21 12 21z" fill="#FFFFFF"/></svg></span>
+        </div>
+        <div class="cta__art" aria-hidden="true" data-speed="-0.04">
+          <img src="assets/img/illustrations/animated/hero-mom-baby-day.svg" data-still="assets/img/illustrations/static/hero-mom-baby-day.svg" alt="" width="170" height="170" loading="lazy">
+        </div>
+        <div class="cta__body">
+          <h2 id="d-title" class="h2">Prenesi MamaMilkivo</h2>
+          <p class="lead">Na voljo v trgovini Google Play za Android 10 ali novejši. Brez računa in brez prijave: odpreš in začneš beležiti.</p>
+          <div class="cta__actions">
+            <a class="store-btn store-btn--light" href="https://play.google.com/store/apps/details?id=si.mamamilkiva.app&amp;hl=sl">
+              <span class="store-btn__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M12 7v7"/><path d="M9 11.5l3 3 3-3"/></svg></span>
+              <span class="store-btn__text"><span class="store-btn__small">Prenesi z</span><span class="store-btn__big">Google Play</span></span>
+            </a>
+            <a class="btn btn--ghost-light btn--lg" href="https://github.com/deniskorinsek/MamaMilkiva/releases/latest">APK na GitHubu</a>
+          </div>
+          <p class="cta__meta">Različica 1.0 · Android 10 ali novejši · Odprta koda</p>
+        </div>
+        <div class="qr-card" role="img" aria-label="QR koda, ki odpre MamaMilkivo v trgovini Google Play">
+          <div class="qr-card__code">
+            <svg viewBox="0 0 41 41" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path stroke="#3B2A2E" d="M0 0.5h7m1 0h1m1 0h2m2 0h1m1 0h2m3 0h3m1 0h3m3 0h1m2 0h7m-41 1h1m5 0h1m3 0h5m1 0h3m1 0h2m1 0h1m1 0h3m1 0h1m2 0h1m1 0h1m5 0h1m-41 1h1m1 0h3m1 0h1m1 0h3m4 0h1m1 0h2m3 0h1m1 0h2m2 0h3m1 0h1m1 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m1 0h2m2 0h1m2 0h3m2 0h2m1 0h7m2 0h1m1 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m3 0h4m2 0h6m1 0h6m1 0h1m3 0h1m1 0h3m1 0h1m-41 1h1m5 0h1m1 0h1m1 0h1m1 0h1m2 0h2m2 0h1m2 0h2m3 0h1m3 0h1m2 0h1m5 0h1m-41 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-33 1h4m2 0h2m4 0h2m1 0h2m1 0h4m1 0h2m-32 1h1m1 0h1m1 0h4m3 0h1m2 0h4m3 0h1m1 0h3m1 0h1m2 0h5m1 0h2m1 0h1m-40 1h1m2 0h1m3 0h1m4 0h4m2 0h1m2 0h4m2 0h2m2 0h1m1 0h2m1 0h4m-41 1h1m1 0h1m3 0h1m1 0h5m2 0h1m2 0h1m4 0h1m1 0h2m2 0h3m1 0h3m1 0h3m-39 1h1m1 0h1m1 0h1m1 0h1m1 0h2m2 0h1m2 0h2m2 0h1m2 0h4m1 0h1m4 0h2m3 0h1m1 0h1m-40 1h2m1 0h1m1 0h3m3 0h2m1 0h2m5 0h1m1 0h2m1 0h1m1 0h1m1 0h4m2 0h1m-37 1h2m1 0h2m1 0h2m1 0h3m2 0h1m3 0h11m3 0h1m1 0h1m1 0h3m-39 1h3m1 0h5m5 0h1m2 0h1m2 0h2m1 0h1m1 0h1m3 0h1m3 0h1m1 0h1m1 0h3m-39 1h1m1 0h2m5 0h1m1 0h1m1 0h1m1 0h5m2 0h4m1 0h3m2 0h1m1 0h1m2 0h1m-40 1h1m1 0h2m1 0h2m1 0h1m2 0h2m1 0h1m1 0h1m2 0h2m1 0h3m4 0h1m1 0h1m3 0h1m1 0h1m1 0h1m-40 1h2m2 0h1m2 0h1m2 0h5m1 0h2m4 0h5m1 0h2m2 0h1m1 0h2m1 0h4m-37 1h1m1 0h2m1 0h1m1 0h1m1 0h5m1 0h4m3 0h1m2 0h1m2 0h2m2 0h3m1 0h1m-40 1h1m2 0h1m2 0h1m1 0h2m5 0h1m1 0h1m4 0h1m2 0h2m4 0h1m2 0h1m1 0h1m2 0h1m-40 1h6m5 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m3 0h3m2 0h3m-40 1h1m1 0h1m3 0h1m6 0h1m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m1 0h2m1 0h4m-41 1h5m1 0h1m1 0h1m6 0h2m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m2 0h6m1 0h2m-37 1h3m1 0h3m1 0h8m5 0h2m1 0h1m3 0h1m2 0h1m3 0h2m-40 1h1m1 0h1m2 0h2m1 0h1m1 0h3m1 0h1m3 0h5m1 0h2m2 0h2m2 0h4m1 0h1m2 0h1m-39 1h2m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h2m1 0h1m1 0h1m3 0h1m1 0h1m-36 1h1m1 0h1m2 0h3m1 0h1m3 0h3m3 0h1m1 0h1m3 0h1m2 0h1m1 0h3m2 0h2m-41 1h2m3 0h1m2 0h3m4 0h1m1 0h1m1 0h2m3 0h4m1 0h2m1 0h1m3 0h1m2 0h1m-40 1h1m3 0h1m1 0h2m2 0h4m1 0h2m3 0h1m5 0h2m1 0h2m2 0h1m5 0h2m-39 1h3m4 0h2m1 0h6m1 0h1m1 0h1m3 0h5m4 0h2m1 0h2m1 0h1m-41 1h1m1 0h6m4 0h1m1 0h1m1 0h1m1 0h2m1 0h2m3 0h3m1 0h1m1 0h1m2 0h1m1 0h1m1 0h2m-39 1h3m2 0h4m1 0h1m1 0h1m2 0h1m2 0h1m1 0h2m2 0h1m2 0h2m2 0h1m2 0h2m2 0h1m-41 1h1m1 0h1m1 0h3m1 0h3m1 0h3m1 0h2m1 0h1m3 0h6m1 0h1m1 0h5m1 0h3m-33 1h1m4 0h4m1 0h3m3 0h1m3 0h2m1 0h2m3 0h5m-41 1h7m1 0h1m2 0h3m2 0h1m5 0h1m7 0h1m1 0h1m1 0h1m1 0h1m1 0h2m-40 1h1m5 0h1m1 0h2m2 0h2m2 0h2m3 0h1m2 0h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m1 0h2m-40 1h1m1 0h3m1 0h1m4 0h1m1 0h1m1 0h1m1 0h5m1 0h2m2 0h2m1 0h1m1 0h5m2 0h1m-40 1h1m1 0h3m1 0h1m1 0h3m2 0h1m3 0h1m2 0h3m1 0h2m3 0h3m1 0h2m1 0h2m1 0h2m-41 1h1m1 0h3m1 0h1m2 0h2m2 0h1m3 0h3m2 0h2m1 0h2m2 0h2m1 0h1m3 0h1m1 0h3m-41 1h1m5 0h1m1 0h2m1 0h1m1 0h1m2 0h1m2 0h1m1 0h2m1 0h3m1 0h3m1 0h2m1 0h1m3 0h1m-40 1h7m2 0h2m2 0h1m3 0h1m1 0h2m1 0h3m2 0h3m2 0h6m1 0h1"/></svg>
+            <img class="qr-card__logo" src="assets/img/icons/app-icon.svg" alt="" width="34" height="34" loading="lazy">
+          </div>
+          <span class="qr-card__label" aria-hidden="true">Skeniraj s telefonom</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer on-dark">
+  <div class="container site-footer__inner">
+    <div class="site-footer__cols">
+      <div class="site-footer__brand">
+        <a class="brand" href="index.html" aria-label="MamaMilkiva, začetna stran">
+          <img class="brand__mark" src="assets/img/icons/app-icon.svg" alt="" width="36" height="36" loading="lazy">
+          <span class="brand__name">MamaMilkiva</span>
+        </a>
+        <p class="site-footer__tagline">Mirno beleženje hranjenja in črpanja. Opomnik je organizacijski pripomoček, ne zdravstveno priporočilo.</p>
+      </div>
+      <nav class="footer-nav" aria-labelledby="fn-app">
+        <p class="footer-nav__title" id="fn-app">Aplikacija</p>
+        <a href="#funkcije">Funkcije</a>
+        <a href="#kako">Kako deluje</a>
+        <a href="#vprasanja">Vprašanja</a>
+        <a href="https://play.google.com/store/apps/details?id=si.mamamilkiva.app&amp;hl=sl">Google Play</a>
+      </nav>
+      <nav class="footer-nav" aria-labelledby="fn-project">
+        <p class="footer-nav__title" id="fn-project">Projekt</p>
+        <a href="https://github.com/deniskorinsek/MamaMilkiva">GitHub</a>
+        <a href="https://github.com/deniskorinsek/MamaMilkiva/releases">Izdaje</a>
+        <a href="https://github.com/deniskorinsek/MamaMilkiva/issues/new">Prijavi napako</a>
+      </nav>
+      <nav class="footer-nav" aria-labelledby="fn-legal">
+        <p class="footer-nav__title" id="fn-legal">Pravno</p>
+        <a href="zasebnost/index.html">Politika zasebnosti</a>
+        <a href="https://github.com/deniskorinsek/MamaMilkiva/blob/main/LICENSE">Licenca</a>
+      </nav>
+    </div>
+    <div class="site-footer__bottom">
+      <p>© 2026 MamaMilkiva</p>
+      <div class="site-footer__meta">
+        <p>Slovenščina · <a href="en/index.html" lang="en" hreflang="en">English</a></p>
+        <button class="motion-toggle" type="button" data-motion-toggle data-label-stop="Ustavi animacije" data-label-start="Vklopi animacije">
+          <svg class="icon-pause" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="5.5" width="3.6" height="13" rx="1.2" fill="currentColor"/><rect x="13.4" y="5.5" width="3.6" height="13" rx="1.2" fill="currentColor"/></svg>
+          <svg class="icon-play" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 5.8v12.4a.8.8 0 0 0 1.2.7l9.6-6.2a.8.8 0 0 0 0-1.4L9.7 5.1a.8.8 0 0 0-1.2.7z" fill="currentColor"/></svg>
+          <span class="motion-toggle__label">Ustavi animacije</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Only read by crawlers when the site is served from a domain root
+# (custom domain or a <user>.github.io repository).
+User-agent: *
+Allow: /
+
+Sitemap: https://deniskorinsek.github.io/MamaMilkiva-Website/sitemap.xml

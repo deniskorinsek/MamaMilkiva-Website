@@ -1,0 +1,12 @@
+.DS_Store
+
+# Secrets: never commit
+keystore.properties
+*.jks
+*.keystore
+*.p12
+service-account.json
+service-account*.json
+local.properties
+.env
+.env.*
