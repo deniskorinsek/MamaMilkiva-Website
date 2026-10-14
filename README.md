@@ -43,7 +43,7 @@ Later changes: commit and push to `main`; Pages redeploys in a minute or two. `.
 | Setting | Value | Where it appears |
 |---|---|---|
 | Website repository | `deniskorinsek/MamaMilkiva-Website` | this folder |
-| App repository | `deniskorinsek/MamaMilkiva` | source, releases (APK), issues and licence links in all pages |
+| App repository | `deniskorinsek/MamaMilkiva` (private) | not linked from the site; downloads go through Google Play, questions to the contact email |
 | Site URL | `https://deniskorinsek.github.io/MamaMilkiva-Website/` | canonical, hreflang, Open Graph, `sitemap.xml`, `robots.txt` |
 | Publisher and contact | Denis Korinsek, korinsekdenis+mamamilkiva@gmail.com | privacy pages |
 | Privacy policy effective date | 14 October 2026 | privacy pages (update it whenever the policy changes) |
@@ -60,7 +60,6 @@ Moving to a custom domain or renaming the repository: replace `deniskorinsek.git
 
 ## Also needed
 
-- **A `LICENSE` file in the repository.** The footer links to it, and without a licence the code is not open source in the legal sense.
 - **Review the privacy policy.** It is a draft based on the app's manifest, `MamaMilkiva-Android/docs/PRIVACY_POLICY.md` and GitHub Pages hosting. Update it whenever permissions, storage or distribution change. It is not legal advice.
 - **Screenshots** in `assets/img/screens/` come from `../designs/screens/png/` (WebP, 420 and 786 px wide). Replace them when the app UI changes; keep the file names.
 
